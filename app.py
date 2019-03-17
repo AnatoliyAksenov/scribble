@@ -8,7 +8,7 @@ app = web.Application(loop=loop)
 
 app.router.add_get("/", lambda request: web.FileResponse("app/index.html"))
 app.router.add_static('/static/', 'app/static', name='public')
-app.router.add_static('/node_modules/', 'app/node_modules', name='publicnm')
+# app.router.add_static('/node_modules/', 'app/node_modules', name='publicnm')
 
 from routes import routes
 
