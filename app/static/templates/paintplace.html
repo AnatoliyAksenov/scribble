@@ -1,0 +1,37 @@
+<div layout="column" layout-align="center center">
+  <p style="margin: 2px">
+      Draw something here.
+  </p>
+  <div layout-align="center" class="lock-size" style="height:350px; width: 350px;" id="paint">
+      <canvas class="draw" id="myCanvas" width="350" height="350"></canvas>   
+  </div>
+    
+  <md-fab-speed-dial md-open="false" md-direction="left" class_="md-fling" class="md-scale md-fab-bottom-right">
+    <md-fab-trigger>
+      <md-button aria-label="menu" class="md-fab md-warn">
+        <md-icon class="mico-x3" md-svg-src="/static/ico/outline-more_horiz.svg" aria-label="More functions"></md-icon>
+      </md-button>
+    </md-fab-trigger>
+
+    <md-fab-actions>
+      <md-button aria-label="Scribbing" class="md-fab md-raised md-mini" ng-click="predict($event)">
+        <md-tooltip md-direction="top" md-visible="tooltipVisible">Predict</md-tooltip>
+        <md-icon class="mico-x2 mico-red" md-svg-src="/static/ico/outline-gesture.svg" aria-label="Scribbing"></md-icon>
+      </md-button>
+      <md-button aria-label="Delete" class="md-fab md-raised md-mini" ng-click="earse($event)">
+        <md-tooltip md-direction="top" md-visible="tooltipVisible">Earse</md-tooltip>
+        <md-icon class="mico-x2" md-svg-src="/static/ico/outline-delete_forever.svg" aria-label="Delete"></md-icon>
+      </md-button>
+      <md-button aria-label="Delete" class="md-fab md-raised md-mini" ng-click="download($event)">
+        <md-tooltip md-direction="top" md-visible="tooltipVisible">Download</md-tooltip>
+        <md-icon class="mico-x2" md-svg-src="/static/ico/outline-save.svg" aria-label="Download"></md-icon>
+      </md-button>
+      <md-button aria-label="Save" class="md-fab md-raised md-mini" ng-click="save($event)" ng-disabled="!result">
+        <md-tooltip md-direction="top" md-visible="tooltipVisible">Share</md-tooltip>
+        <md-icon class="mico-x2" md-svg-src="/static/ico/outline-share.svg" aria-label="Save"></md-icon>
+      </md-button>
+    </md-fab-actions>
+  </md-fab-speed-dial>
+      
+  
+</div>  

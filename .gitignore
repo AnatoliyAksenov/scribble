@@ -1,0 +1,4 @@
+__pycache__
+.vscode
+node_modules
+model/image224_hash.model

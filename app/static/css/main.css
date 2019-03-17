@@ -1,0 +1,60 @@
+.logo {
+    width: 3em;
+    height: 3em;
+    color: rebeccapurple;
+}
+
+.logo-text {
+    font-family: cursive;
+    font-size: xx-large;
+    vertical-align: middle;
+    color: rebeccapurple;
+}
+
+.mico-x3 {
+    height: 3em;
+    width: 100%;
+}
+
+.mico-x2 {
+    height: 2em;
+    width: 100%;
+}
+
+.mico-red {
+    color: red;
+}
+
+.draw {
+    border: solid black 1px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+}
+
+.canvas-width {
+    width: 350px;
+}
+
+.class_level_0{
+    font-size: inherit;
+    color: inherit;
+}
+
+.class_level_1{
+    font-size: small;
+    color: gray;
+}
+
+.class_level_2{
+    font-size: smaller;
+    color: gray;
+}
+
+.class_level_3{
+    font-size: x-small;
+    color: gray;
+}
+
+.class_level_4, .class_level_5, .class_level_6, .class_level_7, .class_level_8, .class_level_9{
+    font-size: xx-small;
+    color: gray;
+}
