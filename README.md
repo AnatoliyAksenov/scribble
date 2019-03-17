@@ -14,6 +14,7 @@ Project dependencies:
 * asyncio
 * aiohttp
 * pymongo
+    * dnspython
 
 The project prepared for deploying to heroku.
 
