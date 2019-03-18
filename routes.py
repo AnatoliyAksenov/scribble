@@ -178,7 +178,7 @@ if __name__ == "__main__":
     # And I have to concat splited files in memory
 
     b = BytesIO()
-    glst = glob.glob("model/*.tar.*")
+    glst = glob.glob("model/*.model.*")
 
     # concat in memory
     for t in glst:
@@ -187,12 +187,14 @@ if __name__ == "__main__":
     b.seek(0)
 
     # untar
-    with tarfile.TarFile(fileobj=b) as f01:
-        for f in f01:
-            r = f01.extractfile(f)
-    
+    # with tarfile.TarFile(fileobj=b) as f01:
+    #     for f in f01:
+    #         r = f01.extractfile(f)
+    # 
     # model = torch.load("model/image224_hash.model")
-    model = torch.load(r)
+    # model = torch.load(r)
+
+    model = torch.load(b)
     
     client = pymongo.MongoClient(os.environ.get('MONGO_URL'))
     db = client.scribbles

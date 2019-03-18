@@ -9,6 +9,12 @@ $ export MONGO_URL=mongodb+srv://<username>:<password>@domain.mongodb.net/<datab
 $ python app.py
 ```
 
+The binary model file has been splited by the command:
+```bash
+$ cd model
+$ split -b 50M image224_hash.model image224_hash.model.
+```
+
 Project dependencies:
 * pytorch 0.4
 * asyncio
