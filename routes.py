@@ -46,7 +46,10 @@ def predict(data):
         # And I have to concat splited files in memory
 
         b = BytesIO()
-        glst = glob.glob("model/*.model.*")
+        
+        # glist havn't guaranty to sorting
+        # glist = glob.glob("model/*.model.*")
+        glst = ['model/image224_hash.model.aa', 'model/image224_hash.model.ab', 'model/image224_hash.model.ac', 'model/image224_hash.model.ad', 'model/image224_hash.model.ae']
 
         # concat in memory
         for t in glst:
