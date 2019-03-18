@@ -64,8 +64,8 @@ def predict(data):
         # 
         # # model = torch.load("model/image224_hash.model")
         
-        model = torch.load(b)
-        model = model.to('cpu')
+        model = torch.load(b, map_location='cpu')
+        # model = model.to('cpu')
 
     input = prepare(data)
 
